@@ -18,6 +18,7 @@ body {
     justify-content: center;
     /* align-items: center; */
     gap: 10px;
+    
 }
 
 .container a{
@@ -43,7 +44,7 @@ body {
 footer{
     background: linear-gradient(to right, #00093c, #2d0b00);
     border-top-left-radius: 100px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
 }
