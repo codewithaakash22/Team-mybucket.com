@@ -10,7 +10,7 @@ body {
     background-color: #000;
 }
 
-.container {
+.section_container {
     height: 500px;
     /* width: 100%; */
     margin: 1rem 2rem 1rem 2rem;
@@ -21,13 +21,13 @@ body {
     
 }
 
-.container a{
+.section_container a{
     height: 100%;
     width: 27%;
     transition: all ease-in-out 0.5s;
 }
 
-.container img{
+.section_container img{
     height: 100%;
     width: 100%;
     object-fit:cover;
@@ -35,7 +35,7 @@ body {
     border-radius:10px;
 }
 
-.container a:hover{
+.section_container a:hover{
     width:33%;
     cursor: pointer;
     
