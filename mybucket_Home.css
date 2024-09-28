@@ -7,39 +7,87 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #F1F2F4;
 }
 
-.section_container {
-    height: 500px;
-    /* width: 100%; */
-    margin: 1rem 2rem 1rem 2rem;
+/*------------------------------------------Main Section CSS------------------------------------------------------------*/
+Main{
+    height: 100vh;
+}
+
+.container{
+    /* border: 2px solid yellow; */
+    margin: 1rem 2.5rem 1rem 2.5rem;
     display: flex;
+    height: 150px;
+    /* width: 8%;  */
     justify-content: center;
-    /* align-items: center; */
-    gap: 10px;
+    gap:10px;
     
 }
 
-.section_container a{
-    height: 100%;
-    width: 27%;
+.container a{
+    width:30%;
+    height:100%;
     transition: all ease-in-out 0.5s;
 }
 
-.section_container img{
-    height: 100%;
-    width: 100%;
-    object-fit:cover;
-    border: 2px solid rgba(255,255,255,0.684);
-    border-radius:10px;
+.container img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 5px;
+    /* border: 2px solid rgba(36, 36, 36, 0.684); */
 }
 
-.section_container a:hover{
-    width:33%;
+.container a:hover{
+    width: 35%;
     cursor: pointer;
-    
 }
+
+/*------Menu Bar section----*/
+
+.menu_bar{
+    /* width: 70%; */
+    /* border:2px solid black; */
+    height: 70px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 1rem 2.5rem 1rem 2.5rem;
+    background-color: #FFF;
+    padding: 0.25rem;
+}
+
+.menu_option {
+    /* text-decoration: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 3rem;    
+    padding-right: 3rem;    
+    /* color:black; */
+}
+
+.menu_option a{
+    color: black;
+    text-decoration: none;
+    text-align:center;
+}
+
+.menu_option a img{
+    width: 35px;
+    height: 35px;
+}
+
+.menu_option a img:hover{
+    width: 40px;
+    height: 40px;
+    cursor:pointer;
+}
+
+/*--------------------------------------------Footer Section CSS----------------------------------------------------------*/
 
 footer{
     background: linear-gradient(to right, #00093c, #2d0b00);
