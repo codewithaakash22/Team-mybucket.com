@@ -98,7 +98,7 @@ header {
 
 /* Main section */
 .banner_container {
-    margin: 40px 0;
+    margin: 1rem 2.5rem 1rem 2.5rem;
 }
 
 .banner_image {
@@ -111,7 +111,7 @@ header {
 .slideshow-container {
     max-width: 100%;
     position: relative;
-    margin: 130px auto 0;
+    margin: 1rem 2.5rem 1rem 2.5rem;
   }
   
   /* Next & previous buttons */
@@ -197,9 +197,9 @@ header {
 
 
 /*------------------------------------------Main Section CSS------------------------------------------------------------*/
-Main{
+/* Main{
     height: 100vh;
-}
+} */
 
 .container{
     /* border: 2px solid yellow; */
