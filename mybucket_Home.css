@@ -7,20 +7,35 @@
 }
 
 body {
-    background-color: #F1F2F4;
+    background-color: #f4f4f4;
 }
 
 header {
     display: flex;
-    background-color: #ffffff;
+    background-color: #2355d2;
     height: 80px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #b6b1b1;
+    color:white;
 }
 
 .logo_container {
     margin-left: 4%;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+
+.logo_container a{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.logo_container img{
+    height: 2rem;
+    padding-right: 0.5rem;
 }
 
 .action_bar {
@@ -38,21 +53,21 @@ header {
 .nav_bar a {
     font-size: 14px;
     letter-spacing: .3px;
-    color: #282c3f;
+    color: #fff;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     padding: 25px 0;
-    border-bottom: 4px solid #ffffff;
+    border-bottom: 4px solid #2355d2;
     
 }
 
 .nav_bar a:hover {
-    border-bottom: 4px solid #f54e77;
+    border-bottom: 4px solid white;
 }
 
 .nav_bar a sup {
-    color: #ff3f6c;
+    color: yellow;
     font-size: 10px;
 }
 
@@ -97,26 +112,35 @@ header {
 }
 
 /* Main section */
-.banner_container {
+/* .banner_container {
     margin: 1rem 2.5rem 1rem 2.5rem;
 }
 
 .banner_image {
     width: 100%;
-}
+} */
 
 
 
 /* Slideshow container */
-.slideshow-container {
+.slideshow-container{
     max-width: 100%;
     position: relative;
-    margin: 1rem 2.5rem 1rem 2.5rem;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide{
+    width: 100%;
+    /* height: 100%; */
+    object-fit:cover;
+    position:absolute;
+    transition: 1s;
+}
+
+/* Next & previous buttons */
+.prevBtn,
+.nextBtn {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -129,45 +153,29 @@ header {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: black;
   }
   
   /* Position the "next button" to the right */
-  .next {
+  .nextBtn {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+  .prevBtn:hover,
+  .nextBtn:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-  
+
   /* Fading animation */
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
+  } 
+
   @-webkit-keyframes fade {
     from {
       opacity: 0.4;
@@ -188,13 +196,30 @@ header {
   
   /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
-    .prev,
-    .next,
+    .prevBtn,
+    .nextBtn,
     .text {
       font-size: 11px;
     }
+  }  
+  /* The dots/bullets/indicators */
+  /* .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
   }
-
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  } */
+  
+  
 
 /*------------------------------------------Main Section CSS------------------------------------------------------------*/
 /* Main{
@@ -202,24 +227,26 @@ header {
 } */
 
 .container{
-    /* border: 2px solid yellow; */
-    margin: 1rem 2.5rem 1rem 2.5rem;
+    /* border: 2px solid black; */
+    margin: 1rem 3rem 1rem 3rem;
     display: flex;
-    height: 150px;
-    /* width: 8%;  */
-    justify-content: center;
+    height: 290px;
+    /* width: 90%;  */
+    justify-content: space-evenly;
     gap:10px;
     
 }
 
 .container a{
-    width:30%;
-    height:100%;
+    /* width: 35%; */
     transition: all ease-in-out 0.5s;
+    aspect-ratio: 16/9;
+    
 }
 
 .container img{
     width:100%;
+    aspect-ratio: 16/9;
     height:100%;
     object-fit: cover;
     border-radius: 5px;
@@ -227,11 +254,10 @@ header {
 }
 
 .container a:hover{
-    width: 35%;
     cursor: pointer;
 }
 
-/*------Menu Bar section----*/
+/*------------------------Menu Bar section----------------------*/
 
 .menu_bar{
     /* width: 70%; */
@@ -240,7 +266,7 @@ header {
     display: flex;
     justify-content:center;
     align-items: center;
-    margin: 1rem 2.5rem 1rem 2.5rem;
+    margin-top: 0.25rem;
     background-color: #FFF;
     padding: 0.25rem;
 }
@@ -273,6 +299,98 @@ header {
     cursor:pointer;
 }
 
+/*------------------item list section ------------------*/
+
+.item-section{
+    margin: 1rem 3rem 1rem 3rem;
+}
+
+.item-header{
+    height:45px;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+
+.item-header i{
+    background-color: #99734c;
+    color:white;
+    padding:1rem;
+    font-size:18px;
+}
+
+.item-header .title{
+    width:100%;
+    background-color: #e1e1e1;
+    padding:1rem;
+    font-weight: bold;
+}
+
+.item-header a i {
+    background-color: #e1e1e1;
+    color:#99734c;
+    padding:0.95rem;
+    font-size: 20px;
+}
+
+.item-lists{
+    display: flex;
+    /* flex-wrap: wrap; */
+    border: 2px solid rgba(128, 128, 128, 0.55);
+    height:25%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.item{
+    height:100%;
+    width: 100%;
+}
+
+.item-lists .item .item-link{
+    height:100%;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;    
+    border-left: 2px solid rgba(128, 128, 128, 0.55);
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.5); */
+    transition: 0.2s ease;
+    padding: 1rem;
+}
+.item-lists .item .item-link:hover{
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    border: none;
+}
+
+.item-link .item-image{
+    width: 100%;
+    padding:10px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}
+
+.item-link .caption{
+    color:black;
+    font-weight: 500;
+    font-size:0.9rem;
+    /* padding-left:0.5rem; */
+    padding-top: 1rem;
+}
+
+.item-link .price{
+    color:black;
+    font-weight:600;
+    /* padding-left:0.5rem; */
+    padding-top:0.35rem;
+}
+
+.item-link .rating{
+    color:orange;
+    font-size: 0.8rem;
+    padding-top:0.5rem;
+    
+}
 /*--------------------------------------------Footer Section CSS----------------------------------------------------------*/
 
 footer{
