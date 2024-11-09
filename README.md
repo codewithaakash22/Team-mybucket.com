@@ -9,3 +9,4 @@ Features:
     section3: Where you can buy Electronic items like: mobile, laptop, earbuds, etc.
 
 3. It will dynamic website where content will be changing time to time.
+4. 
