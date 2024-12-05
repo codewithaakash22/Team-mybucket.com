@@ -376,6 +376,8 @@ header {
     font-size:0.9rem;
     /* padding-left:0.5rem; */
     padding-top: 1rem;
+    height: 80px;
+    overflow:hidden;
 }
 
 .item-link .price{
