@@ -38,7 +38,7 @@ async function getData() {
 
 }
 
-// document.addEventListener("DOMContentLoaded",getData);
+document.addEventListener("DOMContentLoaded",getData);
 
 let items = document.querySelectorAll(".item-link");
 
