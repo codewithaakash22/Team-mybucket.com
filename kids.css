@@ -1,0 +1,309 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    background-color: #2355d2;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b1b1;
+    color:white;
+}
+
+.logo_container {
+    margin-left: 4%;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+
+.logo_container a{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.logo_container img{
+    height: 2rem;
+    padding-right: 0.5rem;
+}
+
+.action_bar {
+    margin-right: 4%;
+  
+}
+
+.nav_bar {
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+
+}
+
+.nav_bar a {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px 0;
+    border-bottom: 4px solid #2355d2;
+    
+}
+
+.nav_bar a:hover {
+    border-bottom: 4px solid white;
+}
+
+.nav_bar a sup {
+    color: yellow;
+    font-size: 10px;
+}
+
+
+.search_bar {
+     height: 40px;
+     min-width: 200px;
+     width: 30%;
+     display: flex;
+     align-items: center;
+}
+
+.search_icon {
+     height: 20px;
+     padding: 10px;
+     box-sizing: content-box;
+     background-color: #f5f5f6;
+     color: #282c3f;
+     font-weight: 300;
+     border-radius: 4px 0 0 4px;
+}
+
+.search_input {
+    color: #696e79;
+    background-color: #f5f5f6;
+    flex-grow: 1;
+    height: 40px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.action_bar {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section1 -kids-carousel */
+
+.kids-carousel {
+  /* border: 2px solid red; */
+    margin-top: 120px;
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+.owl-carousel img {
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+}
+
+
+/* Section 2 -Kids Favourate Brands */
+
+.kids-headlines {
+  /* border: 2px solid red; */
+    height: 20vh;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+}
+
+.kids-headlines h2 {
+    padding-left: 6vw;
+    max-height: 5em;
+    font-weight: 700;
+    letter-spacing: .25vw;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #3e4152;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+}
+
+.kids-brand-wraper {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.kids-brand-wraper a {
+    width: 11vw;
+}
+
+.kids-brand-wraper a img {
+    width: 11vw;
+}
+
+
+
+/* -----------section 3 Kids - Top Picks */
+
+.kids-picks {
+    margin-top: 5px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+.kids-picks a {
+    width: 9vw;
+}
+
+.kids-picks a img {
+    width: 9vw;
+}
+
+@media screen and (max-width: 768px) {
+    .kids-picks a {
+        width: 20vw;
+        /* Adjust width for smaller screens */
+    }
+    .kids-picks a img {
+        width: 20vw;
+        /* Adjust image width for smaller screens */
+    }
+}
+
+
+/* -----------Section 4 Kids -Iconic Brands */
+
+.kids-iconicbrands {
+    height: auto;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+}
+
+.kids-iconicbrands a {
+    width: 20vw;
+}
+
+.kids-iconicbrands a img {
+    width: 20vw;
+    height: auto;
+}
+
+/* @media screen and (max-width: 768px) {
+    .kids-iconicbrands a {
+        width: 30vw;
+    }
+} */
+
+
+/* ------------Section 5 Kids- Fassion and Essentials */
+
+.kids-fassion {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    /* border: 2px solid green; */
+}
+
+.kids-fassion a {
+    width: 20vw;
+}
+
+.kids-fassion a img {
+    width: 20vw;
+}
+
+@media screen and (max-width: 768px) {
+    .kids-fassion a {
+        width: 40vw;
+    }
+    .kids-fassion a img {
+        width: 40vw;
+    }
+}
+
+
+/* ------------ Section 6 Kids -Explore More */
+
+.kids-exploremore {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid blue; */
+}
+
+.kids-exploremore a {
+    width: 50vw;
+}
+
+.kids-exploremore a img {
+    width: 50vw;
+}
+
+@media screen and (max-width: 768px) {
+    .kids-exploremore a {
+        width: 80vw;
+    }
+}
+
+
+/* ----------- Section 7 Kids - Kids Space */
+
+.kids-kids-space {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kids-kids-space a {
+    width: 50vw;
+}
+
+.kids-kids-space a img {
+    width: 50vw;
+}
+
+@media screen and (max-width: 768px) {
+    .kids-kids-space a {
+        width: 100%;
+    }
+    .kids-kids-space a img {
+        width: 100%;
+    }
+}
